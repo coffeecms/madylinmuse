@@ -116,7 +116,7 @@
                                     <span class="flag"><img
                                             src="{{ asset('frontend/assets/images/user-avatar.png') }}"
                                             alt="{{ $allsettings['app_title'] }}"></span>
-                                    <a href="{{ route('login') }}" class="lang">{{ __('My Account') }}</a>
+                                    <a href="{{ route('login') }}" class="lang">Tài khoản</a>
                                 </div>
                             @endif
                     </div>
