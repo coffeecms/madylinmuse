@@ -127,12 +127,12 @@
             <nav class="menu-area">
                 <ul class="main-menu">
                     <li
-                        class="menu-item menu-item-has-children {{ Route::is('front') || Route::is('front*') ? 'active' : '' }}">
+                        class="menu-item menu-item-has-children ">
                         <a class="menu-link" href="{{ route('front') }}">Trang chủ</a>
                     </li>
                     <li
-                        class="menu-item menu-item-has-children {{ Route::is('front') || Route::is('front*') ? 'active' : '' }}">
-                        <a class="menu-link" href="{{ route('front') }}">Sản phẩm</a>
+                        class="menu-item menu-item-has-children ">
+                        <a class="menu-link" href="{{ route('all.product') }}">Sản phẩm</a>
                     </li>
         
 

@@ -4369,7 +4369,7 @@ ul {
 
 .single-grid-product .product-info .product-name {
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     font-weight: 600;
     color: var(--black);
@@ -4407,7 +4407,7 @@ ul {
 
 .single-grid-product .product-info .product-price .regular-price {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #555555;
     text-decoration: line-through;
@@ -4416,7 +4416,7 @@ ul {
 
 .single-grid-product .product-info .product-price .price {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color)
 }
@@ -4798,7 +4798,7 @@ ul {
 
 .single-grid-product-v2 .product-info .product-name {
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     font-weight: 600;
     color: var(--black);
