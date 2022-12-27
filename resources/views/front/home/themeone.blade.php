@@ -22,12 +22,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-1 col-6">
-                            <div class="hero-slider-image text-center">
-                                <img class="hero-image img-fluid" src="{{ asset(SliderImage() . $slider->Thumbnail) }}"
-                                    alt="hero-banner-image" />
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
