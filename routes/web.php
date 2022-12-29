@@ -27,8 +27,8 @@ Route::post('currency-price', [CartController::class, 'currencyPrice'])->name('c
 Route::get('currency-symbol', [CartController::class, 'currencySymbol'])->name('currency_symbol');
 Route::group(['middleware' => ['is_user']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('front');
-    //Route::get('/theme-set/{theme}', [HomeController::class, 'theme_set']);
-    //Route::get('locale/{lang}', [HomeController::class, 'localeSwitch'])->name('locale.switch');
+    Route::get('/theme-set/{theme}', [HomeController::class, 'theme_set']);
+    Route::get('locale/{lang}', [HomeController::class, 'localeSwitch'])->name('locale.switch');
     Route::get('currency/{amount}', [HomeController::class, 'currencySwitch'])->name('currency.switch');
     Route::post('subscribe', [SubscribeController::class, 'subscribe'])->name('subscribe');
 

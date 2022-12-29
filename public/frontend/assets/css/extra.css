@@ -770,3 +770,27 @@
     border: none;
 }
 /* ----- Extra CSS End ----- */
+body
+{
+    background-color: #F6F3E4;
+}
+
+.menu-area
+{
+    background-color: #F6F3E4;
+}
+
+.header-area .header-bottom .menu-area .main-menu .menu-item .menu-link
+{
+    color:#000;
+}
+
+.brand-area
+{
+    position: absolute;
+}
+
+.a-cart-btn
+{
+    color:#000;
+}
