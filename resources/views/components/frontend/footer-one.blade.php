@@ -1,6 +1,6 @@
 
 
-<footer class="footer-area ">
+<footer class="footer-area " style="background-color:#000;">
     <div class="footer-widget-area">
         <div class="container-fluid">
             <div class="row text-center">
