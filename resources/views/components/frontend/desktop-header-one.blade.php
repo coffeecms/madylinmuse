@@ -8,7 +8,7 @@
                     <div class="brand-area">
                         <a class="brand-logo" href="{{ route('front') }}"><img class="brand-image"
                                 src="{{ asset(IMG_LOGO_PATH . $allsettings['main_logo']) }}"
-                                alt="{{ $allsettings['app_title'] }}" /></a>
+                                alt="{{ $allsettings['app_title'] }}" style="width:120px;" /></a>
                     </div>                        
                         <div class="header-top-right">
                       
@@ -72,10 +72,10 @@
         </div>
  
         <div class="header-bottom">
-            <nav class="menu-area">
-                <ul class="main-menu">
+            <nav class="menu-area text-end">
+                <ul class="main-menu display-inline">
                     <li
-                        class="menu-item menu-item-has-children {{ Route::is('front') || Route::is('front*') ? 'active' : '' }}">
+                        class="menu-item menu-item-has-children">
                         <a class="menu-link" href="{{ route('front') }}">Trang chủ</a>
                     </li>
                     <li class="menu-item {{ Route::is('about.us') || Route::is('about.us*') ? 'active' : '' }}"><a

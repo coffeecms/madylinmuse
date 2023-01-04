@@ -794,3 +794,8 @@ body
 {
     color:#000;
 }
+
+.display-inline
+{
+    display: inline-flex!important;
+}
