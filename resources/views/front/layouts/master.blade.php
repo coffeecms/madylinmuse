@@ -6,6 +6,7 @@
 <body
     class="{{ session()->has('lang_dir') && session()->get('lang_dir') == 'rtl' ? 'direction-rtl' : 'direction-ltr' }}">
     <!-- Preloader Area Start -->
+
     <div id="preloader">
         <div id="status">
             <img src="{{ asset(IMG_PRELOADER_PATH . $allsettings['preloader']) }}" alt="img" />
@@ -117,7 +118,54 @@
     <div id="DoNotSubscribe" data-url="{{ route('do.not.subscribe') }}"></div>
     <div id="SubscribeStore" data-url="{{ route('admin.subscribe.store') }}"></div>
     {{-- include file --}}
-    @include('front.layouts.include.script')
+@include('front.layouts.include.script')
+<script>
+var pageData={
+    'totalSlide':0,
+    'nextSlide':1
+};    
+</script>
+<script>
+
+$(document).ready(function(){
+    pageData={
+        'totalSlide':0,
+        'nextSlide':1
+    };    
+
+    pageData['totalSlide']=$('.hero-slider-content').length;
+});
+
+$(document).on('click', '.go-to-url', function () {
+    var target=$(this).attr('data-target');
+    
+    // console.log(target);
+    if(target.indexOf('http')>=0)
+    {
+        location.href=target;
+    }
+    
+});
+
+setInterval( function() { 
+    if($('.hero-slider-content').length > 0)
+    {
+        $('#slick-slide-control0'+pageData['nextSlide']).trigger('click');
+
+        if(parseInt(pageData['nextSlide'])>=parseInt(pageData['totalSlide']))
+        {
+            pageData['nextSlide']=0;
+        }
+        else
+        {
+            pageData['nextSlide']+=1;
+        }
+    }
+
+}, 3000 );
+
+
+</script>
     @stack('post_script')
     {{-- @include('sweetalert::alert') --}}
 

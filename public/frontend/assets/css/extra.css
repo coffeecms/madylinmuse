@@ -799,3 +799,13 @@ body
 {
     display: inline-flex!important;
 }
+
+.signle-slide
+{
+    cursor: pointer;
+}
+
+.hide
+{
+    display: none;
+}

@@ -2,12 +2,12 @@
 <div class="hero-section">
     <div class="hero-slider">
         @foreach ($sliders as $slider)
-            <div class="signle-slide"
+            <div  data-target="{{ langConverter($slider->en_Description, $slider->fr_Description) }}"  class="signle-slide go-to-url"
                 style="background-image: url('{{ asset(SliderImage() . $slider->Background_Image) }}');">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-6">
-                            <div class="hero-slider-content text-center">
+                        <div data-target="{{ langConverter($slider->en_Description, $slider->fr_Description) }}" class="col-lg-6 col-6 go-to-url">
+                            <div class="hero-slider-content text-center hide" >
                                 <h2 class="slider-sub-title">
                                     {{ langConverter($slider->en_Sub_Title, $slider->fr_Sub_Title) }}</h2>
                                 <h1 class="slider-title">
